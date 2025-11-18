@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring6-002-first/src/main/main.iml" filepath="$PROJECT_DIR$/spring6-002-first/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring6.iml" filepath="$PROJECT_DIR$/spring6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring6-001-revalation/spring6-001-revalation.iml" filepath="$PROJECT_DIR$/spring6-001-revalation/spring6-001-revalation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring6-002-first/src/test/test.iml" filepath="$PROJECT_DIR$/spring6-002-first/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
