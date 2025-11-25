@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.longbow.mybatis.mapper.ClassMapper">
+
+    <select id="selectByTidStep2" resultType="Class">
+        select * from t_class where cid = #{cid}
+    </select>
+
+    <resultMap id="selectByCid" type="Class">
+        <id property="cid" column="cid"/>
+        <result property="cname" column="cname"/>
+        <association property="studentList"
+                     select="com.longbow.mybatis.mapper.StudentMapper.selectResultMapStep2"
+                     column="cid"/>
+    </resultMap>
+    
+    <select id="selectResultMapStep1" resultMap="selectByCid">
+        select cid, cname from t_class where cid = #{cid};
+    </select>
+
+
+</mapper>
